@@ -1,0 +1,39 @@
+div#wrapper {
+	position: relative;
+}
+
+input {
+	background-color: transparent;
+	padding: 1rem;
+	width: 250px;
+}
+
+input:focus {
+	outline: none;
+	border: 3px solid black;
+}
+
+input:focus + div#optionsHolder {
+	display: block;
+}
+
+div.option {
+	border: 1px solid #eee;
+	padding: 1rem;
+	width: 250px;
+}
+
+div.option:hover {
+	background-color: cadetblue;
+	color: white;
+}
+
+div#optionsHolder {
+	position: absolute;
+	list-style: none;
+	top: 100%;
+	left: 1.5px;
+	margin: 0;
+	padding: 0;
+	position: block;
+}
